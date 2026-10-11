@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "model": "LivePortrait",
+  "photoSHA256": "ec2a7370b9dd659c92d8614851b89286525d86038f1d3afff8f7a08d54ce6f0b",
+  "imageSize": [
+    1145,
+    1374
+  ],
+  "region": [
+    425,
+    339,
+    254,
+    104
+  ],
+  "poses": {
+    "neutral": "neutral.png",
+    "blink25": "blink25.png",
+    "blink50": "blink50.png",
+    "blink75": "blink75.png",
+    "blink100": "blink100.png",
+    "attentive": "attentive.png",
+    "gaze-left": "gaze-left.png",
+    "gaze-right": "gaze-right.png",
+    "blink-frame-01": "blink-frame-01.png",
+    "blink-frame-02": "blink-frame-02.png",
+    "blink-frame-03": "blink-frame-03.png",
+    "blink-frame-04": "blink-frame-04.png",
+    "blink-frame-05": "blink-frame-05.png",
+    "blink-frame-06": "blink-frame-06.png",
+    "blink-frame-07": "blink-frame-07.png",
+    "blink-frame-08": "blink-frame-08.png",
+    "blink-frame-09": "blink-frame-09.png",
+    "blink-frame-10": "blink-frame-10.png",
+    "blink-frame-11": "blink-frame-11.png",
+    "blink-frame-12": "blink-frame-12.png",
+    "blink-frame-13": "blink-frame-13.png",
+    "blink-frame-14": "blink-frame-14.png",
+    "blink-frame-15": "blink-frame-15.png",
+    "blink-frame-16": "blink-frame-16.png",
+    "blink-frame-17": "blink-frame-17.png",
+    "blink-frame-18": "blink-frame-18.png",
+    "blink-frame-19": "blink-frame-19.png",
+    "blink-frame-20": "blink-frame-20.png"
+  },
+  "timingsSeconds": [
+    12.346260300000722,
+    13.429425399999673,
+    11.915757900000244,
+    10.794394900000043,
+    11.740454900000259,
+    10.884926000000632,
+    11.75938909999968,
+    12.573568799998611
+  ],
+  "realtimeFullModel": false,
+  "eyeMasks": [
+    {
+      "center": [
+        485.92355719766056,
+        407.64440779447614
+      ],
+      "radius": [
+        44.05454111099243,
+        23.564056873321533
+      ],
+      "feather": 0.22
+    },
+    {
+      "center": [
+        620.1514571133011,
+        398.5757104476361
+      ],
+      "radius": [
+        40.9809684753418,
+        22.53953266143799
+      ],
+      "feather": 0.22
+    }
+  ],
+  "source": "https://github.com/KlingAIResearch/LivePortrait",
+  "distribution": "https://github.com/facefusion/facefusion-assets/releases/tag/models-3.0.0",
+  "sourceModels": {
+    "live_portrait_eye_retargeter.onnx": "13cf8b06f0a314e6e65b4a47fea5ce270edb79cd54359c4d273f2c139820276b",
+    "live_portrait_feature_extractor.onnx": "980d26afc9af6d1b6c946329df08b89a4a8582c9bb668d9475f5254e69434d15",
+    "live_portrait_generator.onnx": "db9274114fed504226c5921fc736b9558505e68682e7448631aea7b62cb3048a",
+    "live_portrait_lip_retargeter.onnx": "0f5b76344d0bfbb44c8a0b1ec57a4a7c36fd38db530338777a48c4a33a02d71f",
+    "live_portrait_motion_extractor.onnx": "ef4a00ff50d5d864994eeecb226dc3b298e62afacec8fa4fc8b912835ec4b0ab",
+    "live_portrait_stitcher.onnx": "c6683427edf3e0c3a86e61b1dea1e6dad56c557f5e711fec93966cfb34fd5f87"
+  },
+  "blinkSequence": [
+    "blink-frame-01",
+    "blink-frame-02",
+    "blink-frame-03",
+    "blink-frame-04",
+    "blink-frame-05",
+    "blink-frame-06",
+    "blink-frame-07",
+    "blink-frame-08",
+    "blink-frame-09",
+    "blink-frame-10",
+    "blink-frame-11",
+    "blink-frame-12",
+    "blink-frame-13",
+    "blink-frame-14",
+    "blink-frame-15",
+    "blink-frame-16",
+    "blink-frame-17",
+    "blink-frame-18",
+    "blink-frame-19",
+    "blink-frame-20"
+  ],
+  "poseSHA256": {
+    "neutral": "9bcede3e21482d2c72362f1660055cabe249bb25eba4d7c5604bbb045329b796",
+    "blink25": "6ea8e79202f3b9f884f7dd6a98fffa94f3be43e23e914f27206a1c7506091fac",
+    "blink50": "d41635478e6f28bb00007031f51eb562448558c6f8544f042f48cb3e3886fe6e",
+    "blink75": "f96adb0f55f83e6e42258df0cd2efa59fb50764c584f129aa1434496552887b9",
+    "blink100": "8a71f973ef1de6f3c4470bf4e3842d888ecb173b02eaa9a59f654f42b5bd35b8",
+    "attentive": "84cd2e98c0705c0d007610d5e865f41f323aa28112a4b5708c967aef99ff5c3b",
+    "gaze-left": "6e4fc41408b97c438f960cb31a4fa8471de9e95adfaa238b79b3c83650283700",
+    "gaze-right": "d798a603e8c1ad0343de57e15dad7d7ab5ae0cdf624212abdffbb17c24b429b8",
+    "blink-frame-01": "0da56ca222ec25db73493e0169602fc4ea991c92b1a80a49d91147257a83e644",
+    "blink-frame-02": "f130efeaa0c7bdcd60bc09ecd8386ebcc0b27464d632a7381288d4831aca409f",
+    "blink-frame-03": "932be62fe9e88c72308e932b7dc8d7e6c4d5b0fe57bfaa83d8d331343f94708a",
+    "blink-frame-04": "a04b2c19d6f9ef62e9db4c39f37fe4be364802075c5139e98d3960c4e5710b5a",
+    "blink-frame-05": "91bf69a80eb05181d562d60367f7e118cc1521ebf59f07786949ac2a08098962",
+    "blink-frame-06": "b7e023a20da89867fa5d91825f3f6f68fb73288749415424c7d4b991c1c7bbb7",
+    "blink-frame-07": "9c3e955efb399e244d43b797efdc92e92a2505f763f0e8df1570bafaac45a7fa",
+    "blink-frame-08": "ac4c0fedc0e38cdcb9c88cc195b984662fb49b4af218f991549ff57044856436",
+    "blink-frame-09": "15e196d208ba603d59899595745153d340caecb366894f1399eed001e069832c",
+    "blink-frame-10": "8e23fb7542f42053027a7b3c007aab4ab9954c8c9e9a006160632294114b9425",
+    "blink-frame-11": "200983732c39078a532d8a8eb3c78878eb782a846b868f515cc707cab4672876",
+    "blink-frame-12": "5b3e7d5de54b234b213b4bdfc6d85acb1973943fa3db42a47aaac34aed834983",
+    "blink-frame-13": "11488443db727c02269b2c90572208f6bba3cb7d7275d203a12c58f5c95d1d67",
+    "blink-frame-14": "04410fe7c29f56779237b2a05338bb908865f7bb380bac9fe7512fd8297b5d69",
+    "blink-frame-15": "8241f10dd71dfe48ad353d1ce9b152a982fba6820394bffc00bbbf92c30970ed",
+    "blink-frame-16": "d25dbff5dc352d268041c4b33a1ddcee6b6fecd3907e321b8cbeb601a343a2f4",
+    "blink-frame-17": "055f4afdc12df193afa5636369eeabb70e49f5398954a78db7d69ddcc8cef236",
+    "blink-frame-18": "ab64c650b4ce7c96f199e9a865d7e94b386d3f4245108c259c46c806a8810f6a",
+    "blink-frame-19": "94566e2242e43e911be030a9c49562559c957f3a91ed22be04af85a9af65f968",
+    "blink-frame-20": "9fefbac549244d0d41b3e55162f46d7f0fdb68c714a51179094f87f585710517"
+  },
+  "textureMethod": "source-photo-flow-for-brows-and-gaze; colour-matched-learned-eyelids",
+  "blinkRegion": "eyelids-only; original-brows-remain-continuous",
+  "blinkInterpolation": "20 cached bidirectional-flow lid poses; browser blends adjacent small steps"
+}

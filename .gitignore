@@ -1,0 +1,17 @@
+node_modules/
+output/
+*.log
+.env
+.env.local
+.env.*
+!.env.example
+.private/
+.runtime/
+test-results/
+playwright-report/
+__pycache__/
+*.py[cod]
+kernel.errors.txt
+# Uploaded voice recordings stay on this computer.
+public/assets/voice-reference*.wav
+public/assets/voice-reference*.m4a

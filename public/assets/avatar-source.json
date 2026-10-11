@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "photoSHA256": "ec2a7370b9dd659c92d8614851b89286525d86038f1d3afff8f7a08d54ce6f0b",
+  "imageSize": [
+    1145,
+    1374
+  ],
+  "style": "green-jacket-garden-guide",
+  "generated": true,
+  "backgroundIsVerifiedVenuePhoto": false,
+  "originalPhotoSHA256": "989b5d5d69e178900bb5726ce4a8b3948aa91fc2f8869d15cf5ee5ff63ddeec3",
+  "approvedAt": "2026-10-10"
+}

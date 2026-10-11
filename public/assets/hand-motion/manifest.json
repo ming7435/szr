@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "photoSHA256": "ec2a7370b9dd659c92d8614851b89286525d86038f1d3afff8f7a08d54ce6f0b",
+  "imageSize": [
+    1145,
+    1374
+  ],
+  "region": [
+    190,
+    1070,
+    700,
+    304
+  ],
+  "center": [
+    545,
+    1235
+  ],
+  "radius": [
+    305,
+    140
+  ],
+  "maxShift": [
+    8,
+    -16
+  ],
+  "maxTilt": 0.01,
+  "method": "photo-local-wrist-deformation",
+  "freeFingerGestures": false
+}

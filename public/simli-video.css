@@ -1,0 +1,39 @@
+#live-avatar-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 21%;background:#182633}
+#live-avatar-video[hidden]{display:none}
+#local-mouth-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 21%}
+#local-mouth-canvas[hidden]{display:none}
+#face-expression-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 21%;pointer-events:none;z-index:1}
+#face-expression-canvas[hidden],.portrait-stage.live-video #face-expression-canvas{display:none}
+.avatar-panel:fullscreen #face-expression-canvas{object-fit:contain}
+.portrait-stage.local-mouth{transform:none!important;transition:none}
+.portrait-stage.local-mouth #portrait,.portrait-stage.local-mouth .voice-glow{visibility:hidden}
+.avatar-panel:fullscreen #local-mouth-canvas{object-fit:contain}
+.portrait-stage.live-video{transform:none!important;transition:none}
+.portrait-stage.live-video #portrait,.portrait-stage.live-video .voice-glow{visibility:hidden}
+.avatar-panel:fullscreen #live-avatar-video{object-fit:contain}
+#simli-form{display:grid;gap:12px;margin:18px 0}
+#simli-form>label{font-size:12px;color:#526c86}
+#simli-form input:not([type=checkbox]){width:100%;padding:11px 12px;border:1px solid #dce5ef;border-radius:7px;background:#fff;color:#304b65}
+#simli-form .voice-confirmation{display:flex;align-items:flex-start;gap:8px;font-size:11px;line-height:1.8}
+#simli-form button{justify-self:start}
+#simli-status{line-height:1.8;font-size:12px;color:#58718d}
+.portrait-layers{position:absolute;inset:0}
+.face-motion-backing{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.portrait-stage.coherent-face{transform:none!important;transition:none}
+.portrait-stage.live-video .portrait-layers,.portrait-stage.live-video .face-motion-backing{visibility:hidden}
+.avatar-panel:fullscreen .portrait-stage{background:#dbe6f2}
+body[data-conversation-mode=voice-only] .portrait-stage:not(.live-video) img,
+body[data-conversation-mode=voice-only] #local-mouth-canvas,
+body[data-conversation-mode=voice-only] #face-expression-canvas{object-fit:contain;object-position:50% 50%}
+.hand-motion{position:absolute;pointer-events:none}
+.hand-motion[hidden],.portrait-stage.live-video .hand-motion{display:none}
+/* Keep controls below the photograph so the clasped hands stay visible. */
+body[data-conversation-mode=voice-only] .portrait-stage{bottom:60px}
+body[data-conversation-mode=voice-only] .portrait-stage:after{display:none}
+body[data-conversation-mode=voice-only] .avatar-live{bottom:19px}
+body[data-conversation-mode=voice-only] .avatar-live .live-line,
+body[data-conversation-mode=voice-only] #avatar-mode,
+body[data-conversation-mode=voice-only] .avatar-bottom p{display:none}
+body[data-conversation-mode=voice-only] .avatar-bottom{bottom:22px;color:#526c86}
+body[data-conversation-mode=voice-only] .avatar-bottom .quiet-button{color:#526c86}
+body[data-conversation-mode=voice-only] .sound-bars i{background:#6486a4}

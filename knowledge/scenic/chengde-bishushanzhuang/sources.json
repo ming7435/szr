@@ -1,0 +1,64 @@
+[
+  {
+    "id": "official-overview",
+    "title": "景区官网：避暑山庄概况",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/About/ac_view/id/1.html",
+    "checkedAt": "2026-10-10"
+  },
+  {
+    "id": "unesco-703",
+    "title": "世界遗产中心：Mountain Resort and its Outlying Temples, Chengde",
+    "publisher": "UNESCO World Heritage Centre",
+    "url": "https://whc.unesco.org/en/list/703/",
+    "checkedAt": "2026-10-10",
+    "note": "遗产范围包括周围寺庙，页面列出的611.2公顷不能当作仅山庄园内面积。"
+  },
+  {
+    "id": "official-area",
+    "title": "景区官网：避暑山庄景区与推荐路线",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/Scenic/area_index.html",
+    "checkedAt": "2026-10-10",
+    "note": "路线站点用作简化游览建议的依据。季节开放时间表没有标注版本，不作为当天实时开放保证。页脚电话为咨询方式，服务中心地址不作为入园门地址。"
+  },
+  {
+    "id": "official-danbo",
+    "title": "景区官网：澹泊敬诚",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/Scenic/spot_view/id/77.html",
+    "checkedAt": "2026-10-10"
+  },
+  {
+    "id": "official-yanyulou",
+    "title": "景区官网：烟雨楼",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/Scenic/spot_view/id/73.html",
+    "checkedAt": "2026-10-10"
+  },
+  {
+    "id": "official-jinshan",
+    "title": "景区官网：金山",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/Scenic/spot_view/id/39.html",
+    "checkedAt": "2026-10-10"
+  },
+  {
+    "id": "official-rehe",
+    "title": "景区官网：热河",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/Scenic/spot_view/id/40.html",
+    "checkedAt": "2026-10-10"
+  },
+  {
+    "id": "official-summer-2026",
+    "title": "景区官网：2026年5月1日至10月9日开放时间公告",
+    "publisher": "避暑山庄及周围寺庙景区服务中心",
+    "url": "https://www.bishushanzhuang.com.cn/index.php/Activity/ac_view/id/134.html",
+    "publishedAt": "2026-04-30",
+    "checkedAt": "2026-10-10",
+    "validFrom": "2026-05-01",
+    "validTo": "2026-10-09",
+    "note": "已过期，归档用于有效期过滤示例；不进入当前会话资料。"
+  }
+]

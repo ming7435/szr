@@ -1,0 +1,112 @@
+[
+  {
+    "id": "chengde-overview",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "overview",
+    "title": "山庄的历史与遗产范围",
+    "kind": "fact",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-overview", "unesco-703"],
+    "profileFields": ["overview"],
+    "content": "承德避暑山庄位于河北省承德市，是清代皇帝避暑和处理政务的离宫，1703年始建，1792年建成。避暑山庄及周围寺庙于1994年列入世界遗产名录。周围寺庙位于园外，不能当作园内景点。"
+  },
+  {
+    "id": "chengde-landscape",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "landscape",
+    "title": "山水与园林布局",
+    "kind": "fact",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-overview"],
+    "profileFields": ["highlights"],
+    "content": "山庄西北为山区、东南为湖区、北部为平原区。宫殿和园林建筑与自然山水相结合，是理解皇家园林布局的线索。"
+  },
+  {
+    "id": "chengde-danbo",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "spot",
+    "title": "澹泊敬诚",
+    "kind": "fact",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-danbo"],
+    "profileFields": ["highlights"],
+    "content": "澹泊敬诚建于1711年，1754年用楠木改建。这座殿堂曾用于重大庆典、朝觐和接见，体现山庄作为清代离宫的政务功能。"
+  },
+  {
+    "id": "chengde-yanyulou",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "spot",
+    "title": "烟雨楼",
+    "kind": "fact",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-yanyulou"],
+    "profileFields": ["highlights"],
+    "content": "山庄烟雨楼建于1780年，位于青莲岛，借鉴浙江嘉兴南湖烟雨楼。它是山庄吸收江南园林意境的例子，不能把嘉兴的原址误说成承德园内位置。"
+  },
+  {
+    "id": "chengde-jinshan",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "spot",
+    "title": "金山岛",
+    "kind": "fact",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-jinshan"],
+    "profileFields": ["highlights"],
+    "content": "山庄金山岛建于1703年，借鉴镇江金山寺，结合人工堆山和岛上建筑营造景观。讲解要区分山庄金山岛与镇江金山寺。"
+  },
+  {
+    "id": "chengde-rehe",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "spot",
+    "title": "热河泉",
+    "kind": "fact",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-rehe"],
+    "profileFields": ["highlights"],
+    "content": "热河泉是山庄内的泉水景点，可结合泉水与园林水景讲解。没有现场测量数据，不承诺水温、水量或水质，不建议饮用。"
+  },
+  {
+    "id": "chengde-first-visit-route",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "route",
+    "title": "初次游览的简化建议",
+    "kind": "suggestion",
+    "status": "curated",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-area"],
+    "profileFields": ["route"],
+    "content": "根据官网北线站点整理的简化建议：丽正门、宫殿区澹泊敬诚、湖区、如意洲、青莲岛烟雨楼。这是讲解建议，不是完整官方路线或实时导航。需根据体力、时间和现场开放情况调整，不保证精确距离、时长或无障碍通行。"
+  },
+  {
+    "id": "chengde-visitor-service",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "service",
+    "title": "人工咨询与动态信息边界",
+    "kind": "service_reference",
+    "status": "reference_only",
+    "checkedAt": "2026-10-10",
+    "sourceIds": ["official-area"],
+    "profileFields": ["visitorInfo", "contact"],
+    "content": "官网公布服务中心咨询电话0314-2029771，核对日期为2026年10月10日。门票、优惠、预约、开放时间、临时关闭和出入口以官方页面与现场公告为准；本次资料整理没有核实当天票价或临时调整。"
+  },
+  {
+    "id": "chengde-summer-hours-2026-archive",
+    "scenicId": "cn-hebei-chengde-bishushanzhuang",
+    "topic": "opening_hours",
+    "title": "2026年夏季开放公告（过期归档）",
+    "kind": "historical_notice",
+    "status": "expired",
+    "checkedAt": "2026-10-10",
+    "validFrom": "2026-05-01",
+    "validTo": "2026-10-09",
+    "sourceIds": ["official-summer-2026"],
+    "profileFields": [],
+    "content": "这份开放时间公告只适用于2026年5月1日至10月9日，截至核对日已过期。仅供历史归档，不可用来回答当前开放时间。"
+  }
+]

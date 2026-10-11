@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "defaultScenicId": "cn-hebei-chengde-bishushanzhuang",
+  "scenicAreas": [
+    {
+      "id": "cn-hebei-chengde-bishushanzhuang",
+      "name": "承德避暑山庄",
+      "aliases": ["避暑山庄"],
+      "province": "河北省",
+      "city": "承德市",
+      "checkedAt": "2026-10-10",
+      "profile": "scenic/chengde-bishushanzhuang/profile.json",
+      "documents": "scenic/chengde-bishushanzhuang/documents.json",
+      "sources": "scenic/chengde-bishushanzhuang/sources.json"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "photoSHA256": "ec2a7370b9dd659c92d8614851b89286525d86038f1d3afff8f7a08d54ce6f0b",
+  "imageSize": [
+    1145,
+    1374
+  ],
+  "generatorSeconds": [
+    12.267389700000422,
+    13.019556799999918,
+    15.08724059999986
+  ],
+  "motion": {
+    "pitch": {
+      "maxPixels": 8.0,
+      "meanFacePixels": 2.667964458465576,
+      "outsideMaskExact": true
+    },
+    "yaw": {
+      "maxPixels": 5.3286871910095215,
+      "meanFacePixels": 2.3974838256835938,
+      "outsideMaskExact": true
+    }
+  },
+  "cloudCalls": 0,
+  "realtimeFullGenerator": false,
+  "schema": 1,
+  "scale": 0.02,
+  "fields": {
+    "pitch": "pitch-field.png",
+    "yaw": "yaw-field.png"
+  },
+  "fieldSHA256": {
+    "pitch": "6f4f8ffd8cd1b2402795ccb6938d01cb4bef45d3e59370a3f0b00d515caf8d6d",
+    "yaw": "8334dcee9911b9ff0067aa151b2c2c63aeddba6b77da63e19536abb744daf261"
+  },
+  "source": "https://github.com/KlingAIResearch/LivePortrait",
+  "region": [
+    313,
+    121,
+    480,
+    598
+  ],
+  "fieldSize": [
+    480,
+    598
+  ]
+}

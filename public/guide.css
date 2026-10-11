@@ -1,0 +1,29 @@
+.guide-scenes{display:grid;grid-template-columns:minmax(0,1fr);margin-bottom:26px}
+.guide-scene{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:17px 20px;border:1px solid #8eb4a0;border-radius:12px;background:#e7f0eb;color:#5c7187;text-align:left}
+.guide-scene strong{font-size:15px;color:#304e69;font-weight:600}
+.guide-scene span{font-size:11px;line-height:1.6}
+.guide-venue{font-size:13px;line-height:1.7;color:#4f6b84;margin:11px 0 0;overflow-wrap:anywhere}
+.guide-demo-label{display:inline-block;font-size:10px;color:#997543;background:#f7efde;border-radius:5px;padding:4px 7px;margin-top:9px}
+.guide-demo-label[hidden]{display:none}
+.guide-inspiration{font-size:12px;line-height:1.9;color:#71869a;margin:17px 0 0;max-width:430px}
+:root{--blue:#365d4d;background:#f3f5ee;color:#2b4036}
+.topbar{background:#fafbf6;border-bottom-color:#e0e6db}
+.brand,.nav-current{color:#365d4d}.nav-current:after{background:#365d4d}
+.eyebrow{color:#879980}.version-pill{background:#edf2e8;border-color:#dfe6d9}
+.intro>div:first-child{min-width:0}.intro h1{overflow-wrap:anywhere}
+#guide-heading-name{display:block;color:#304f3f}
+#guide-heading-tagline{display:block;font-size:23px;color:#86977a;margin-top:8px}
+.guide-scene{background:#eaf0e3;border-color:#a6bda5;color:#718174}
+.guide-scene strong{color:#365547}.guide-venue{color:#718174}
+.avatar-panel{background:#e4ecdf;border-color:#d8e1d2}
+.conversation-panel{border-color:#dde5d7}.intro-note{color:#7a8979}
+.connection-summary{border-color:#dce5d6}
+#guide-title{overflow-wrap:anywhere}
+#guide-form{display:grid;gap:12px;margin-top:14px}
+#guide-fields{display:grid;gap:10px;border:0;margin:0;padding:0;min-width:0}
+#guide-fields label{font-size:12px;color:#506b84}
+#guide-fields input:not([type=checkbox]),#guide-fields textarea{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #d9e3ee;border-radius:7px;background:white;color:#314f6a;font:inherit;font-size:12px;line-height:1.8;resize:vertical}
+#guide-fields .guide-demo-check{display:flex;gap:8px;align-items:flex-start;line-height:1.8}
+#guide-save{justify-self:start}
+#guide-save-status{font-size:12px;line-height:1.8;color:#58728b;margin-bottom:0}
+@media(max-width:760px){.guide-scenes{gap:7px;margin-bottom:18px}.guide-scene{padding:12px 9px;gap:5px}.guide-scene strong{font-size:12px}.guide-scene span{font-size:10px}.guide-inspiration{font-size:11px}#guide-heading-tagline{font-size:20px}}

@@ -1,0 +1,6 @@
+# Windows / Python 3.12. Personal/research Wav2Lip model only.
+openvino==2024.6.0
+openvino-telemetry==2025.2.0
+numpy==1.26.4
+scipy==1.13.1
+opencv-python==4.10.0.84

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eff3f7">
+  <title>承德避暑山庄 · 景区讲解员</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%232b537c'/%3E%3Cpath d='M10 12v8m6-12v16m6-12v8' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/doubao-settings.css">
+  <link rel="stylesheet" href="/simli-video.css">
+  <link rel="stylesheet" href="/guide.css">
+</head>
+<body data-conversation-mode="voice-only">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="数字人首页"><span class="brand-mark"><i></i><i></i><i></i></span><span>映身<span class="brand-en">HUMAN STUDIO</span></span></a>
+    <nav aria-label="主要导航"><span class="nav-current" id="guide-nav">承德避暑山庄</span><button id="settings-open" class="nav-button">景区与分身设置 <span aria-hidden="true">↗</span></button></nav>
+    <span class="version-pill"><span></span> 实时交互</span>
+  </header>
+
+  <main class="workspace">
+    <section class="intro">
+      <div><p class="eyebrow" id="guide-eyebrow">CHENGDE · MOUNTAIN RESORT</p><h1><span id="guide-heading-name">承德避暑山庄</span><span id="guide-heading-tagline">宫苑山水，边走边听。</span></h1><p class="intro-note" id="guide-intro">景区讲解员 · 历史故事与游览咨询</p></div>
+      <div class="connection-summary"><span class="connection-dot" id="connection-dot"></span><span id="connection-summary">正在检查连接</span></div>
+    </section>
+
+    <div class="guide-scenes" aria-label="旅游景区">
+      <div class="guide-scene"><strong id="guide-scene-name">承德避暑山庄</strong><span id="guide-scene-description">旅游景区 · 宫殿建筑 · 湖区园林 · 游览咨询</span></div>
+    </div>
+
+    <div class="studio-grid">
+      <section class="avatar-panel" aria-label="数字人预览">
+        <div class="avatar-top"><span class="small-label"><span class="mini-square"></span><span id="guide-role">景区讲解员</span></span><button id="fullscreen" class="icon-button" aria-label="全屏预览" title="全屏预览"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
+        <div class="portrait-stage" id="portrait-stage"><div id="portrait-layers" class="portrait-layers"><img id="portrait" src="/assets/avatar.png" alt="景区讲解员的数字人形象" draggable="false"><canvas id="local-mouth-canvas" hidden aria-label="实时口型数字人"></canvas><canvas id="face-expression-canvas" hidden aria-hidden="true"></canvas></div><video id="live-avatar-video" playsinline autoplay muted hidden aria-label="实时数字人声画"></video><div class="voice-glow"></div></div>
+        <div class="avatar-live"><span class="live-dot" id="avatar-dot"></span><span id="avatar-status">等待与你见面</span><span class="live-line"></span><span id="avatar-mode">照片驱动 · 语音动效</span></div>
+        <div class="subtitle" id="subtitle" hidden></div>
+        <div class="avatar-bottom"><div class="sound-bars" id="sound-bars" aria-hidden="true"></div><p>THIS IS YOUR DIGITAL SELF</p><button id="motion-toggle" class="quiet-button" aria-pressed="true">动效开启</button></div>
+      </section>
+
+      <section class="conversation-panel" aria-label="语音对话">
+        <div class="conversation-header"><div><p class="eyebrow">YOUR SCENIC GUIDE</p><h2 id="guide-title">正在加载景区资料</h2><p id="guide-venue" class="guide-venue"></p><span id="guide-demo-label" class="guide-demo-label" hidden>演示景区 · 虚构资料</span></div><button id="clear-chat" class="icon-button" aria-label="清空对话" title="清空对话" hidden><svg viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></svg></button></div>
+        <div class="voice-presence" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="18" y="7" width="12" height="24" rx="6"/><path d="M11 22v3a13 13 0 0 0 26 0v-3M24 38v6m-7 0h14"/></svg></div>
+        <div class="chatgpt-card" aria-label="对话账号连接" hidden>
+          <div class="chatgpt-account"><strong>对话账号 · ChatGPT</strong><span id="chatgpt-status" role="status">正在检查登录</span></div>
+          <button id="chatgpt-signin" class="secondary-button">使用 ChatGPT 登录</button>
+          <button id="chatgpt-cancel" class="quiet-button" hidden>取消登录</button>
+          <a id="chatgpt-login-link" target="_blank" rel="noreferrer" hidden>打开登录页面 ↗</a>
+          <div id="chatgpt-options" class="chatgpt-options" hidden><label class="sr-only" for="chatgpt-model">对话模型</label><select id="chatgpt-model" aria-label="对话模型"></select><a id="chatgpt-usage" href="https://chatgpt.com/settings/usage" target="_blank" rel="noreferrer">管理用量 ↗</a><button id="chatgpt-signout" class="quiet-button">退出</button></div>
+        </div>
+        <div class="session-controls"><button id="connect" class="primary-button"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg><span>开始对话</span></button><button id="mute" class="icon-button control-button" disabled aria-label="关闭麦克风" aria-pressed="false" title="关闭麦克风"><svg viewBox="0 0 24 24"><path d="M9 6a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0V6Zm-4 5v1a7 7 0 0 0 14 0v-1M12 19v3"/></svg></button><button id="interrupt" class="icon-button control-button" disabled aria-label="打断回答" title="打断回答"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button></div>
+        <p class="control-note" id="control-note">连接后直接说话，随时可以插话打断。</p><button id="audio-resume" class="secondary-button" hidden>开启声音</button>
+        <p id="guide-inspiration" class="guide-inspiration"></p>
+
+        <div class="chat" id="chat" hidden>
+          <div class="empty-chat" id="empty-chat"><div class="empty-orbit"><span class="empty-wave">▂ ▅ █ ▅ ▂</span></div><h3>不必想好开场白。</h3><p>说一句你好，或从感兴趣的话题开始。<br>我会认真听，然后自然地回应。</p><div class="prompts"><button data-prompt="你好，请简单介绍一下你自己。">先打个招呼 <span>↗</span></button><button data-prompt="帮我规划一下明天的工作安排。">聊聊明天的计划 <span>↗</span></button><button data-prompt="给我讲一个轻松有趣的小故事。">听一个小故事 <span>↗</span></button></div></div>
+        </div>
+
+        <form id="text-form" class="text-composer" hidden><label class="sr-only" for="message">文字消息</label><input id="message" autocomplete="off" maxlength="1200" placeholder="打字聊天，按 Enter 发送…"><button id="pro-stop" type="button" class="quiet-button" hidden>停止回答</button><button id="send" type="submit" class="send-button" aria-label="发送消息"><svg viewBox="0 0 24 24"><path d="m5 12 14-7-4 14-3-6-7-1Zm7 1 7-8"/></svg></button></form>
+        <div class="conversation-footer" hidden><span><span class="tiny-dot"></span> 中文 · 自然对话</span><button id="export-chat" class="quiet-button">导出对话 ↓</button></div>
+      </section>
+    </div>
+
+    <footer class="page-footer"><span id="guide-footer-note">从宫殿到湖区，听懂山庄的故事。</span><span>AI 景区讲解员 <span class="footer-dot">·</span> 专属音色 · 实时交互</span></footer>
+  </main>
+
+  <dialog id="settings" class="settings-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">MAKE IT YOURS</p><h2>分身设置</h2></div><button id="settings-close" class="icon-button" aria-label="关闭设置">✕</button></div>
+    <div class="setup-notice" id="setup-notice"></div>
+    <section class="settings-section" id="guide-settings">
+      <h3>景区讲解资料</h3><p class="field-help" id="guide-settings-scene">正在加载场景。</p>
+      <p class="field-help">统一提供旅游景区讲解，使用一套景区资料。保存内容会结束当前对话；再次开始后使用更新内容。</p>
+      <form id="guide-form">
+        <fieldset id="guide-fields" disabled>
+          <label for="guide-venue-input">景区名称</label><input id="guide-venue-input" maxlength="120" required placeholder="景区或旅游目的地名称">
+          <label for="guide-overview">景区简介</label><textarea id="guide-overview" rows="3" maxlength="600" required placeholder="景区主题、特色与游览看点"></textarea>
+          <label for="guide-highlights">景点与旅游讲解资料</label><textarea id="guide-highlights" rows="6" maxlength="3200" placeholder="按景点分段，填写准确名称、看点和已确认的事实"></textarea>
+          <label for="guide-route">推荐参观路线</label><textarea id="guide-route" rows="3" maxlength="1200" placeholder="列出沿途讲解点；只填写已确认的路线信息"></textarea>
+          <label for="guide-visitor-info">参观与服务信息</label><textarea id="guide-visitor-info" rows="3" maxlength="900" placeholder="开放时间、票价、预约与注意事项；未知信息可留空"></textarea>
+          <label for="guide-contact">人工咨询方式</label><input id="guide-contact" maxlength="200" placeholder="服务台、工作人员或已确认的联系方式">
+          <label class="guide-demo-check"><input id="guide-demo" type="checkbox">这是虚构演示资料（仅在使用虚构测试内容时勾选）。</label>
+        </fieldset>
+        <button id="guide-save" class="secondary-button" type="submit" disabled>保存当前景区资料</button>
+        <p id="guide-save-status" role="status">正在加载讲解资料。</p>
+      </form>
+    </section>
+    <section class="settings-section" id="doubao-settings" hidden>
+      <h3>实时语音 · 你的音色</h3>
+      <p>开通两个服务，用你的录音复刻音色，训练完成后填写 API Key 和音色 ID。</p>
+      <p class="field-help"><a href="https://console.volcengine.com/speech/new/overview?projectName=default" target="_blank" rel="noreferrer">打开语音服务控制台 ↗</a> · <a href="https://docs.volcengine.com/docs/DoubaoVoice/Soundreplicationorderingandusageguide?lang=zh" target="_blank" rel="noreferrer">查看服务开通指引 ↗</a> · <a href="/assets/voice-reference-clean.wav" download="我的音色-降噪录音.wav">下载降噪录音 ↓</a></p>
+      <form id="doubao-form" autocomplete="off">
+        <label for="doubao-auth-mode">控制台接入方式</label><select id="doubao-auth-mode"><option value="api-key">新版控制台 · API Key</option><option value="app-token">旧版应用 · APP ID / Access Token</option></select>
+        <div id="doubao-api-key-fields"><label for="doubao-api-key">API Key</label><input id="doubao-api-key" type="password" autocomplete="off" spellcheck="false" maxlength="4096" required placeholder="只在本机填写，不要发到聊天中"></div>
+        <div id="doubao-app-fields" hidden><label for="doubao-app-id">APP ID</label><input id="doubao-app-id" inputmode="numeric" pattern="[0-9]{5,30}" maxlength="30" placeholder="实时语音应用的 APP ID"><label for="doubao-token">Access Token</label><input id="doubao-token" type="password" autocomplete="off" spellcheck="false" maxlength="4096" placeholder="只在本机填写，不要发到聊天中"></div>
+        <label for="doubao-voice-id">声音复刻 2.0 音色 ID</label><input id="doubao-voice-id" maxlength="122" required pattern="S_[a-zA-Z0-9_-]{4,120}" placeholder="S_ 开头，已用你的录音训练完成">
+        <label class="voice-confirmation"><input id="doubao-own-voice" type="checkbox" required>此音色由我上传的录音复刻，已完成声音复刻 2.0 训练。</label>
+        <button id="doubao-save" class="secondary-button" type="submit">保存语音配置</button>
+      </form>
+      <p class="field-help">新版凭据在<a href="https://console.volcengine.com/speech/new/setting/apikeys?projectName=default" target="_blank" rel="noreferrer">API Key 管理 ↗</a>中创建。旧版应用凭据可前往<a href="https://console.volcengine.com/speech/app" target="_blank" rel="noreferrer">应用控制台 ↗</a>。凭据经 Windows 加密保存在本机。免费额度用尽后可能转为后付费，接入前请查看「开通管理」中的余量和计费方式。</p>
+    </section>
+    <section class="settings-section"><h3>实时对话</h3><p id="voice-identity">固定音色：你上传的声音</p><p class="field-help">接入完成后，数字人始终使用这个音色生成回答；回答长短与参考录音时长无关。</p><label for="persona">讲解风格</label><textarea id="persona" rows="3" maxlength="1600">自然、清晰、利落地用普通话讲解，语气平实亲切，吐字清楚，句尾不拖音，一次说两到四句话。耐心倾听，游客插话时先听完再回应，不编造个人经历或尚未提供的景区信息。</textarea><p class="field-help">数字人统一使用景区讲解员身份，这里仅设置表达风格。</p><div class="settings-row"><label for="vad-eagerness">回应节奏</label><select id="vad-eagerness"><option value="auto">自然 · 自动判断</option><option value="low">耐心 · 等待更久</option><option value="high">敏捷 · 更快回应</option></select></div></section>
+    <section class="settings-section voice-enrollment"><div class="section-title"><h3>创建专属音色</h3><span class="small-tag">OpenAI Custom Voice</span></div><p>已载入你上传录音的降噪版本。还需由同一说话人单独录制下面的授权语句，并使用已开通自定义音色权限的 OpenAI 账号。</p><blockquote id="consent-phrase">我是此声音的拥有者并授权OpenAI使用此声音创建语音合成模型</blockquote><div class="recording-controls"><button id="record-consent" class="secondary-button">● 录制授权语句</button><label class="upload-button" for="consent-file">或选择授权录音<input id="consent-file" type="file" accept="audio/*" hidden></label></div><audio id="consent-preview" controls hidden></audio><p class="field-help" id="enrollment-status">仅录制上面这一句，声音需与参考录音一致。</p><button id="create-voice" class="primary-button" disabled>创建并使用专属音色</button><p class="field-help">创建时会把参考音频和授权录音发送给 OpenAI。<a href="https://developers.openai.com/api/docs/guides/custom-voices" target="_blank" rel="noreferrer">查看接口要求 ↗</a></p></section>
+    <section class="settings-section" id="simli-settings" hidden>
+      <h3>实时口型与表情</h3>
+      <p id="local-mouth-status" hidden>当前已启用本机高清口型、脸颊与下颌联动、轻微点头和眉眼动作，无需 Simli 账号或 Face ID。这些是照片驱动的基础动作，当前版本用于个人测试。</p>
+      <p>下方为可选的 Simli 云端人像设置。人像模型只需准备一次，之后实时响应对话，不播放预录视频。</p>
+      <p id="simli-status" role="status">正在检查实时人像设置。</p>
+      <p class="field-help"><a href="https://app.simli.com/create/select" target="_blank" rel="noreferrer">准备实时人像模型 ↗</a> · <a href="/assets/avatar.png" download="实时数字人-当前照片.png">下载当前照片 ↓</a></p>
+      <form id="simli-form" autocomplete="off">
+        <label for="simli-api-key">Simli API Key</label><input id="simli-api-key" type="password" autocomplete="off" spellcheck="false" maxlength="4096" placeholder="只在本机填写；已保存的密钥无需再填">
+        <label for="simli-face-id">当前照片的人像模型 Face ID</label><input id="simli-face-id" maxlength="36" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" placeholder="从 Simli 的 Your Avatars 中复制">
+        <label class="voice-confirmation"><input id="simli-own-portrait" type="checkbox">这个 Face ID 对应我提供的当前照片。</label>
+        <label class="voice-confirmation"><input id="simli-enabled" type="checkbox">下次对话启用实时口型和表情。</label>
+        <button id="simli-save" class="secondary-button" type="submit">保存实时人像设置</button>
+      </form>
+      <button id="simli-refresh" class="quiet-button" type="button">检查账号内的人像模型</button>
+      <p class="field-help">启用后，生成的回答音频会发送给 Simli，并同步返回声画。密钥经 Windows 加密保存在本机。试用余额及人像创建费用以控制台为准，额度不足时停止连接。</p>
+    </section>
+    <div class="dialog-footer"><button id="settings-save" class="primary-button">保存设置</button><span>对话设置在下次连接生效。</span></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <audio id="reference-audio" src="/assets/voice-reference-clean.m4a" preload="metadata"></audio>
+  <audio id="remote-audio" autoplay></audio>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
